@@ -1,77 +1,61 @@
-🏓 Ứng Dụng Quản Lý CLB Pickleball
-
-Pickleball Club Management Application
-
-Ứng dụng di động hỗ trợ quản lý và vận hành câu lạc bộ Pickleball, dành cho Hội viên và Quản trị viên.
+Ứng Dụng Quản Lý CLB Pickleball (Pickleball Club Management)
+Chào mừng bạn đến với dự án Pickleball Club Management Application - Giải pháp toàn diện cho việc quản lý và vận hành câu lạc bộ Pickleball hiện đại.
 
 🚀 Giới Thiệu
-
-Ứng dụng được xây dựng bằng Flutter, kết nối với Backend (Web API), hỗ trợ đặt sân, quản lý giải đấu và ví điện tử cho câu lạc bộ Pickleball hiện đại.
+Đây là ứng dụng di động được xây dựng bằng Flutter, kết nối với Backend ASP.NET Core Web API. Ứng dụng cung cấp nền tảng cho cả Hội viên (Members) và Quản trị viên (Admins) để tương tác, đặt sân, quản lý giải đấu và theo dõi tài chính.
 
 ✨ Tính Năng Chính
-👤 Hội Viên (Member)
-
-Đặt sân, xem lịch sân
-
-Quản lý hồ sơ cá nhân
-
-Ví điện tử: nạp tiền, xem số dư, lịch sử giao dịch
-
-Tham gia & theo dõi giải đấu
-
-🛠 Quản Trị Viên (Admin)
-
-Quản lý sân bãi
-
-Quản lý giải đấu
-
-Theo dõi hoạt động & tài chính CLB
-
+👤 Đối với Hội Viên (Member)
+- Đặt sân, xem lịch sân
+- Quản lý hồ sơ cá nhân
+- Ví điện tử: nạp tiền, xem số dư, lịch sử giao dịch
+- Tham gia & theo dõi giải đấu
+🛠 Đối với Quản Trị Viên (Admin)
+- Quản lý sân bãi
+- Quản lý giải đấu
+- Theo dõi hoạt động & tài chính CLB
 🛠 Công Nghệ Sử Dụng
+Frontend (Mobile):
 
-Flutter (Dart)
+Framework: Flutter (Dart)
+State Management: Bloc / Cubit (Clean Architecture)
+Real-time: SignalR (signalr_netcore)
+Networking: Dio (với Interceptors & Token management)
+UI Components: fl_chart, table_calendar, google_fonts
+Backend (Server):
 
-Provider – State Management
+Platform: ASP.NET Core 8.0 Web API
+Database: SQL Server + Entity Framework Core
+Authentication: JWT (Identity Core)
+Real-time Hub: SignalR
+📦 Cài Đặt & Chạy Ứng Dụng
+Yêu Cầu
+Flutter SDK (Latest Stable)
+Dart SDK
+Android Studio / VS Code
+Các Bước Thực Hiện
+Clone Repository (Nếu chưa có):
 
-REST API (Backend)
+git clone https://github.com/NguyenXuanGiang30/Mobile_17710200230_CNTT1708.git
+cd Mobile_17710200230_CNTT1708 (hoặc thư mục chứa code)
+Cài Đặt Dependencies:
 
-Hỗ trợ đa nền tảng: Android, iOS, Web
-
-📂 Cấu Trúc Dự Án (Flutter)
-lib/
-├── config/                 # Cấu hình & hằng số
-│   └── app_constants.dart
-│
-├── data/
-│   └── services/           # Gọi API, xử lý dữ liệu
-│       ├── api_client.dart
-│       ├── auth_service.dart
-│       ├── booking_service.dart
-│       └── wallet_service.dart
-│
-├── providers/              # Quản lý state (Provider)
-│   ├── auth_provider.dart
-│   ├── booking_provider.dart
-│   ├── tournament_provider.dart
-│   └── wallet_provider.dart
-│
-├── screens/                # Giao diện người dùng
-│   ├── admin/
-│   ├── auth/
-│   ├── booking/
-│   ├── history/
-│   ├── home/
-│   ├── profile/
-│   ├── tournament/
-│   └── wallet/
-│
-└── main.dart               # Entry point
-
-▶️ Chạy Ứng Dụng
 flutter pub get
+Cấu Hình API:
+
+Mở file lib/core/constants/api_config.dart.
+Cập nhật baseUrl trỏ về địa chỉ server của bạn (ví dụ: http://10.0.2.2:5006 cho Android Emulator hoặc IP LAN cho thiết bị thật).
+Chạy Ứng Dụng:
+
 flutter run
-
-👤 Tác Giả
-
-Tran Van Phong
-Dự án phục vụ bài tập / đồ án môn học.
+📱 Cấu Trúc Dự Án
+lib/
+├── blocs/          # Business Logic Components (State Management)
+├── core/           # Constants, Services, Theme, Utils
+├── models/         # Data Models (DTOs)
+├── repositories/   # Data Layer (API calls)
+├── screens/        # UI Screens (Home, Booking, Admin, Profile...)
+├── widgets/        # Reusable Widgets
+└── main.dart       # Entry Point
+👥 Tác Giả
+Nguyen Xuan Giang
