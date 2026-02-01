@@ -1,0 +1,32 @@
+# ===== Flutter =====
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+*.lock
+
+# Android
+android/.gradle/
+android/app/build/
+
+# iOS / macOS
+ios/Pods/
+ios/.symlinks/
+macos/Pods/
+
+# Windows / Linux
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+
+# ===== .NET =====
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log

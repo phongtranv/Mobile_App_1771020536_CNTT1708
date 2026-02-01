@@ -1,0 +1,6 @@
+@PCM_Backend_1771020536_HostAddress = http://localhost:5255
+
+GET {{PCM_Backend_1771020536_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
