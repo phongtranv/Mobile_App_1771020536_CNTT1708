@@ -65,7 +65,6 @@ lib/
 
 
 
-```md
 ## ▶️ Chạy Ứng Dụng
 
 ```bash
@@ -75,7 +74,6 @@ flutter run
 
 
 
-```md
 ## 👤 Tác Giả
 
 **Tran Van Phong**  
