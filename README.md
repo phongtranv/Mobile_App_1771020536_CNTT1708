@@ -1,5 +1,4 @@
 
-=======
 # 🏓 Ứng Dụng Quản Lý CLB Pickleball (Pickleball Club Management)
 
 Chào mừng bạn đến với dự án **Pickleball Club Management Application** – giải pháp toàn diện cho việc quản lý và vận hành câu lạc bộ Pickleball hiện đại.
@@ -66,21 +65,19 @@ lib/
 
 
 
-▶️ Chạy Ứng Dụng
+```md
+## ▶️ Chạy Ứng Dụng
 
+```bash
 flutter pub get
-Cấu Hình API:
-
-Mở file lib/core/constants/api_config.dart.
-Cập nhật baseUrl trỏ về địa chỉ server của bạn (ví dụ: http://10.0.2.2:5006 cho Android Emulator hoặc IP LAN cho thiết bị thật).
-Chạy Ứng Dụng:
-
 flutter run
 
 
 
 
-👤 Tác Giả
+```md
+## 👤 Tác Giả
 
-Tran Van Phong
+**Tran Van Phong**  
+Dự án phục vụ bài tập / đồ án môn học.
 
