@@ -1,37 +1,36 @@
+# 🏓 Ứng Dụng Quản Lý CLB Pickleball  
+**Pickleball Club Management Application**
 
-# 🏓 Ứng Dụng Quản Lý CLB Pickleball (Pickleball Club Management)
-
-Chào mừng bạn đến với dự án **Pickleball Club Management Application** – giải pháp toàn diện cho việc quản lý và vận hành câu lạc bộ Pickleball hiện đại.
+Ứng dụng di động hỗ trợ quản lý và vận hành câu lạc bộ Pickleball, dành cho **Hội viên** và **Quản trị viên**.
 
 ---
 
 ## 🚀 Giới Thiệu
-Đây là ứng dụng di động được xây dựng bằng **Flutter**, kết nối với **Backend Web API**.  
-Ứng dụng cung cấp nền tảng cho **Hội viên (Members)** và **Quản trị viên (Admins)** để đặt sân, quản lý giải đấu và theo dõi tài chính.
+
+Ứng dụng được xây dựng bằng **Flutter**, kết nối với **Backend Web API**, hỗ trợ đặt sân, quản lý giải đấu và ví điện tử cho câu lạc bộ Pickleball hiện đại.
 
 ---
 
 ## ✨ Tính Năng Chính
 
-### 👤 Đối với Hội Viên (Member)
-- Đặt sân, xem lịch sân trực quan  
-- Quản lý hồ sơ cá nhân, lịch sử thi đấu  
-- Ví điện tử: nạp tiền, xem số dư, lịch sử giao dịch  
-- Tham gia và theo dõi giải đấu  
+### 👤 Hội Viên (Member)
+- Đặt sân, xem lịch sân
+- Quản lý hồ sơ cá nhân
+- Ví điện tử: nạp tiền, xem số dư, lịch sử giao dịch
+- Tham gia & theo dõi giải đấu
 
-### 🛠 Đối với Quản Trị Viên (Admin)
-- Dashboard thống kê hoạt động CLB  
-- Quản lý sân bãi  
-- Quản lý giải đấu  
-- Theo dõi tài chính  
+### 🛠 Quản Trị Viên (Admin)
+- Quản lý sân bãi
+- Quản lý giải đấu
+- Theo dõi hoạt động & tài chính CLB
 
 ---
 
 ## 🛠 Công Nghệ Sử Dụng
-- Flutter (Dart)  
-- Provider – State Management  
-- RESTful API  
-- Hỗ trợ Android, iOS, Web  
+- **Flutter (Dart)**
+- **Provider** – State Management
+- **REST API (Backend ASP.NET Core)**
+- Hỗ trợ đa nền tảng: **Android, iOS, Web**
 
 ---
 
@@ -39,20 +38,23 @@ Chào mừng bạn đến với dự án **Pickleball Club Management Applicatio
 
 ```text
 lib/
-├── config/
+├── config/                 # Cấu hình & hằng số
 │   └── app_constants.dart
+│
 ├── data/
-│   └── services/
+│   └── services/           # Gọi API, xử lý dữ liệu
 │       ├── api_client.dart
 │       ├── auth_service.dart
 │       ├── booking_service.dart
 │       └── wallet_service.dart
-├── providers/
+│
+├── providers/              # Quản lý state (Provider)
 │   ├── auth_provider.dart
 │   ├── booking_provider.dart
 │   ├── tournament_provider.dart
 │   └── wallet_provider.dart
-├── screens/
+│
+├── screens/                # Giao diện người dùng
 │   ├── admin/
 │   ├── auth/
 │   ├── booking/
@@ -61,7 +63,9 @@ lib/
 │   ├── profile/
 │   ├── tournament/
 │   └── wallet/
-└── main.dart
+│
+└── main.dart               # Entry point
+```
 
 ---
 
@@ -70,11 +74,11 @@ lib/
 ```bash
 flutter pub get
 flutter run
+```
 
 ---
-
 
 ## 👤 Tác Giả
 
 **Tran Van Phong**  
-Dự án phục vụ bài tập / đồ án môn học.
+Dự án phục vụ **bài tập / đồ án môn học**
